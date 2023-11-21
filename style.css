@@ -1,9 +1,50 @@
 body{
-    background: linear-gradient(112deg, rgba(0, 0, 0, 0.25) 18.82%, rgba(42, 34, 79, 0.00) 79.93%), #2F2B52; 
+    background: linear-gradient(112deg, rgba(0, 0, 0, 0.25) 18.82%, rgba(42, 34, 79, 0.00) 79.93%), #2F2B52;
+    font-family: 'Inter', sans-serif;
 }
-img{
-    width: 100px;
+.container-wide{
+    width: 2390px;
+    padding: 0 53px;
+    color: #fff;
 }
 .head{
-    display : inline;
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.head__logo{
+    display: flex;
+    width: 88px;
+}
+.container__header{
+    display: block;
+    color: #fff;
+}
+
+.head__heading{
+    font-size: 32px;
+    font-weight: 600;
+}
+.head__center{
+    margin-left: 240px ;
+    font-size: 32px;
+    font-weight: 600;
+}
+.head__login{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header-first{
+    display: flex;
+    justify-content: center;
+    font-size: 88px;
+    font-weight: 400;
+}
+.header-second{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
 }
