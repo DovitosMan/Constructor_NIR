@@ -26,7 +26,7 @@
         <section class="container__window-data"> <!--1 section, data-->
             <h1 class="window__head-first">Входные данные</h1>
             <h2 class="window__head-second">Заполните ячейки в соответствии с тематикой вашей Научно-исследовательской работы</h2>
-            <form class="window__select">
+            <form class="window__select"> <!--нужна ли форма, делать это все в форме?-->
                 <select class="select" name="nyr" id="nyr-select">
                     <option value="">--Научно-исследовательская работа--</option>
                     <option value="expert-analyse">Экспертно-аналитические работы по обзору имеющихся данных, подходов, методик, выделение проблем и определение подходов к их решению</option>
@@ -44,38 +44,38 @@
             <div class="window__coef">Коэффициенты</div>
             <div class="window__coef-parametrs">
                 <div class="coef">Новизна
-                    <input class="input-coeff" type="text" minlength="1" maxlength="5"> <!--required?-->
+                    <input class="input-base" type="text" minlength="1" maxlength="5"> <!--required?-->
                 </div>
                 <div class="coef">Сложность
-                    <input class="input-coeff" type="text" minlength="1" maxlength="5">
+                    <input class="input-base" type="text" minlength="1" maxlength="5">
                 </div>
                 <div class="coef">Масштабность вида работ
-                    <input class="input-coeff" type="text" minlength="1" maxlength="5">
+                    <input class="input-base" type="text" minlength="1" maxlength="5">
                 </div>
                 <div class="coef">Квал-ия специалистов
-                    <input class="input-coeff" type="text" minlength="1" maxlength="5">
+                    <input class="input-base" type="text" minlength="1" maxlength="5">
                 </div>
                 <div class="coef">Унификация
-                    <input class="input-coeff" type="text" minlength="1" maxlength="5">
+                    <input class="input-base" type="text" minlength="1" maxlength="5">
                 </div>
                 <div class="coef">Глубина н-ой проработки
-                    <input class="input-coeff" type="text" minlength="1" maxlength="5">
+                    <input class="input-base" type="text" minlength="1" maxlength="5">
                 </div>
             </div>
             <div class="window__entry-data">
                 <div class="data">Человека-часов
-                    <input class="input-data" type="text" minlength="2" maxlength="5"> <!--required?-->
+                    <input class="input-base" type="text" minlength="2" maxlength="5"> <!--required?-->
                 </div>
                 <div class="data">Зароботная плата
-                    <input class="input-data" type="text" minlength="2" maxlength="5">
+                    <input class="input-base" type="text" minlength="2" maxlength="5">
                 </div>
                 <div class="data">Время
-                    <input class="input-data" type="text" minlength="2" maxlength="5">
+                    <input class="input-base" type="text" minlength="2" maxlength="5">
                 </div>
             </div>
             <div class="window__other-data">
                 <div class="other">Прочие накладные расходы
-                    <input class="input-other" type="text" minlength="2" maxlength="5"> <!--required?-->
+                    <input class="input-base" type="text" minlength="2" maxlength="5"> <!--required?-->
                 </div>
             </div>
             <button class="submit">

@@ -3,7 +3,6 @@ body{
     font-family: 'Inter', sans-serif;
 }
 .container-wide{
-    width: 2390px;
     padding: 0 53px;
     color: #fff;
 }
@@ -56,9 +55,8 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    width: 2014px;
-    height: 618px;
     padding: 32px 24px 22px;
+    
 }
 
 .select{
@@ -91,13 +89,14 @@ body{
     font-weight: 400;
     line-height: 182%;
 }
-.input-coeff{
+.input-base{
     flex-shrink: 0;
     border: 1px solid var(--neutral-grey, #DDDCE0);
     border-radius: 8px;
     background: var(--White, #FFF);
     height: 44px;
     align-self: stretch;
+    font-size: 20px;
 }
 
 /*data*/
@@ -115,33 +114,19 @@ body{
     font-weight: 400;
     line-height: 182%; 
 }
-.input-data{
-    flex-shrink: 0;
-    border: 1px solid var(--neutral-grey, #DDDCE0);
-    border-radius: 8px;
-    background: var(--White, #FFF);
-    height: 44px;
-    align-self: stretch;
-}
+
 
 /*other*/
 
 .window__other-data{
-    display: flex;
+    align-self: stretch;
     gap: 2rem;
 }
 .other{
     display: flex;
     flex-direction: column;
 }
-.input-other{
-    flex-shrink: 0;
-    border: 1px solid var(--neutral-grey, #DDDCE0);
-    border-radius: 8px;
-    background: var(--White, #FFF);
-    height: 44px;
-    align-self: stretch;
-}
+
 
 /*cost*/
 
@@ -179,6 +164,35 @@ body{
     font-weight: 600;
     line-height: 182%;  
 }
+
+.submit{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+
+
+
+button{
+    display: flex;
+    height: 62px;
+    padding: 14px 12px 18px 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-grey, #DDDCE0);
+    background: #3F3E5E;
+}
+button:hover{
+    background: #52507a;
+}
+
 
 /*faq*/
 
@@ -244,3 +258,4 @@ body{
     align-items: flex-start;
     gap: 40px;
 }
+
