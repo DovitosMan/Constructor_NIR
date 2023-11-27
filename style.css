@@ -1,9 +1,10 @@
 body{
     background: linear-gradient(112deg, rgba(0, 0, 0, 0.25) 18.82%, rgba(42, 34, 79, 0.00) 79.93%), #2F2B52;
     font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 .container-wide{
-    padding: 0 53px;
+    /* padding: 0 53px; */
     color: #fff;
 }
 .head{
@@ -19,6 +20,8 @@ body{
 .container__header{
     display: block;
     color: #fff;
+    padding: 50px;
+    margin-bottom: 35px;
 }
 
 .head__heading{
@@ -26,9 +29,15 @@ body{
     font-weight: 600;
 }
 .head__center{
-    margin-left: 240px ;
+    margin-left: 240px;
+    /* font-size: 32px; */
+    /* font-weight: 600; */
+    color: var(--White, #FFF);
+    font-family: Inter;
     font-size: 32px;
+    font-style: normal;
     font-weight: 600;
+    line-height: normal;
 }
 .head__login{
     font-size: 32px;
@@ -36,16 +45,45 @@ body{
 }
 
 .header-first{
-    display: flex;
-    justify-content: center;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
     font-size: 88px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 100%;
+    margin-top: 26px;
 }
 .header-second{
-    display: flex;
-    justify-content: center;
+    color: var(--primary-slate-200, #B6B0D3);
+    text-align: center;
+    font-family: Inter;
     font-size: 24px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 180%; /* 43.2px */
+
+}
+.window__head-first{
+    color: var(--slate-3, #3F3E5E);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+
+.window__head-second{
+    width: 26%;
+    color: var(--slate-3, #3F3E5E);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%; /* 36.4px */
 }
 
 /*select middle information, entry data*/
@@ -56,31 +94,41 @@ body{
     flex-direction: column;
     background-color: #fff;
     padding: 32px 24px 22px;
-    
+    border-radius: 16px;
 }
 
 .select{
-    display: flex;
-    padding: 8px 18px 8px 12px;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
+    
 }
 
 .window__select{
-    display: flex;
-    justify-content: center;
+    padding: 8px 18px 8px 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-grey, #DDDCE0);
+    background: var(--White, #FFF);
+    font-size: 20px;
+    text-align-last: center;
 }
+
 
 /*coeffs*/
 
 .window__coef{
     align-self: start;
+    align-self: start;
+    color: var(--slate-3, #3F3E5E);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%;
 }
 
 .window__coef-parametrs{
     display: flex;
     gap: 2rem;
+    width: 100%;
 }
 .coef{
     color: var(--slate-3, #3F3E5E);
@@ -88,6 +136,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: 182%;
+    width: 100%;
 }
 .input-base{
     flex-shrink: 0;
@@ -95,8 +144,10 @@ body{
     border-radius: 8px;
     background: var(--White, #FFF);
     height: 44px;
-    align-self: stretch;
+    width: 100%;
     font-size: 20px;
+    display: flex;
+   
 }
 
 /*data*/
@@ -104,6 +155,7 @@ body{
 .window__entry-data{
     display: flex;
     gap: 2rem;
+    width: 100%;
 }
 .data{
     display: flex;
@@ -113,18 +165,21 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: 182%; 
+    width: 100%;
 }
 
 
 /*other*/
 
 .window__other-data{
-    align-self: stretch;
-    gap: 2rem;
+    width: 100%;
 }
 .other{
-    display: flex;
-    flex-direction: column;
+    font-size: 20px;
+    padding: 7px 0 7px;
+    font-weight: 400;
+    line-height: 182%;
+    color: var(--slate-3, #3F3E5E);
 }
 
 
@@ -174,20 +229,18 @@ body{
     font-weight: 400;
     line-height: 30px; /* 150% */
 }
-
-
-
 button{
+    margin-top: 5px;
     display: flex;
     height: 62px;
-    padding: 14px 12px 18px 12px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    align-self: stretch;
     border-radius: 8px;
     border: 1px solid var(--neutral-grey, #DDDCE0);
     background: #3F3E5E;
+    width: 100%;
+    cursor: pointer;
 }
 button:hover{
     background: #52507a;
@@ -204,6 +257,7 @@ button:hover{
     border: 1px solid var(--neutral-grey, #DDDCE0);
     background: var(--White, #FFF);
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.05);
+    height: 1700px; /*пример*/
 }
 .window-faq__head{
     color: var(--slate-3, #3F3E5E);
@@ -234,15 +288,9 @@ button:hover{
     line-height: normal;
 }
 
-/* .footer__logo{ ?????????
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: red;
-    width: 114px;
-    height: 112px;
-    flex-shrink: 0;
-} */
+.footer__logo{
+    margin-left: 2%;
+} 
 
 .footer__info{
     display: flex;
@@ -253,6 +301,13 @@ button:hover{
     align-items: flex-start;
     gap: 40px;
 }
+
+.footer__border-line{
+    border: 1px solid #fff;
+    margin-left: 40px;
+    width: 1141px;
+}
+
 .footer__info-second{
     display: inline-flex;
     align-items: flex-start;
