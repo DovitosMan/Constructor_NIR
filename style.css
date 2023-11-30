@@ -57,13 +57,16 @@ body{
 .header-second{
     color: var(--primary-slate-200, #B6B0D3);
     text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 180%; /* 43.2px */
-
 }
+
+.main{
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-bottom: 110px;
+}
+
 .window__head-first{
     color: var(--slate-3, #3F3E5E);
     font-family: Inter;
@@ -79,11 +82,8 @@ body{
     width: 26%;
     color: var(--slate-3, #3F3E5E);
     text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 182%; /* 36.4px */
 }
 
 /*select middle information, entry data*/
@@ -107,7 +107,7 @@ body{
     border-radius: 8px;
     border: 1px solid var(--neutral-grey, #DDDCE0);
     background: var(--White, #FFF);
-    font-size: 20px;
+    font-size: 25px;
     text-align-last: center;
 }
 
@@ -116,11 +116,8 @@ body{
 
 .window__coef{
     align-self: start;
-    align-self: start;
     color: var(--slate-3, #3F3E5E);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 400;
     line-height: 182%;
 }
@@ -132,7 +129,7 @@ body{
 }
 .coef{
     color: var(--slate-3, #3F3E5E);
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: 182%;
@@ -145,9 +142,8 @@ body{
     background: var(--White, #FFF);
     height: 44px;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
-   
 }
 
 /*data*/
@@ -161,13 +157,37 @@ body{
     display: flex;
     flex-direction: column;
     color: var(--slate-3, #3F3E5E);
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: 182%; 
     width: 100%;
 }
-
+.submit{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+button{
+    margin-top: 5px;
+    display: flex;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-grey, #DDDCE0);
+    background: #3F3E5E;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    background: #52507a;
+}
 
 /*other*/
 
@@ -175,7 +195,7 @@ body{
     width: 100%;
 }
 .other{
-    font-size: 20px;
+    font-size: 25px;
     padding: 7px 0 7px;
     font-weight: 400;
     line-height: 182%;
@@ -199,53 +219,50 @@ body{
 .cost-head{
     color: var(--White, #FFF);
     font-size: 36px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    text-align: center;
+    margin-bottom: auto;
 }
 .cost-base{
     color: var(--White, #FFF);
     text-align: center;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 600;
-    line-height: 182%; 
 }
-.cost-other{
+
+.window-cost__main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid var(--primary-slate-700, #3F3E5E);
+    background: radial-gradient(231.69% 141.42% at 100% 0%, #322F58 0%, rgba(49, 45, 85, 0.94) 0%, rgba(24, 21, 43, 0.00) 100%);
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.cost__plate{
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(32, 28, 55, 0.60) 0.08%, rgba(32, 28, 55, 0.00) 100.03%);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.17);
+    width: 1300px;
+    margin-top: 30px;
+}
+
+.cost-base__main{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cost-info{
     color: var(--White, #FFF);
     text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 182%;  
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
-
-.submit{
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 150% */
-}
-button{
-    margin-top: 5px;
-    display: flex;
-    height: 62px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 1px solid var(--neutral-grey, #DDDCE0);
-    background: #3F3E5E;
-    width: 100%;
-    cursor: pointer;
-}
-button:hover{
-    background: #52507a;
-}
-
 
 /*faq*/
 
