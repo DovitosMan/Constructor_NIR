@@ -267,14 +267,13 @@ button:hover{
 /*faq*/
 
 .container__window-faq{
-    display: flex;
-    justify-content: center;
-    align-self: start;
+    text-align: center;
     border-radius: 16px;
     border: 1px solid var(--neutral-grey, #DDDCE0);
     background: var(--White, #FFF);
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.05);
-    height: 1700px; /*пример*/
+    height: 100%; /*пример*/
+    padding-bottom: 25px;
 }
 .window-faq__head{
     color: var(--slate-3, #3F3E5E);
@@ -289,6 +288,92 @@ button:hover{
     gap: 24px;
     align-self: start;
 }
+
+.window-faq__body{
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.acardeon{
+    display: flex;
+    flex-direction: column;
+}
+
+.faq{
+    max-width: 100%;
+    margin: 5px auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.faq-item{
+    border-radius: 8px;
+    border: 1px solid #BFBAEC;
+    margin-bottom: 5px;
+}
+
+.faq-title{
+    font-size: 22px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    color: black;
+    cursor: pointer;
+    transition: background .2s ease-out;
+}
+
+.faq-title::after{
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.faq-title:hover{
+    background-color: #BFBAEC;
+    border-radius: 8px;
+}
+
+.faq-input{
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.faq-input:checked ~ .faq-title{
+    background-color: #BFBAEC;
+}
+
+.faq-input:checked ~ .faq-title:after{
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #000000 transparent;
+    transform: rotate(0deg);
+}
+
+.faq-input:checked ~ .faq-text{
+    display: block;
+}
+
+.faq-text{
+    display: none;
+    padding: 10px 15px;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+}
+
 /*footer*/
 
 .container__footer{
