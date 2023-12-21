@@ -78,11 +78,11 @@ function calculate () {
     
     let basePriceElement = parseInt(peopleInput.value) * parseInt(salaryInput.value) * parseFloat(timeInput.value) * coefWork
     const formatter = new Intl. NumberFormat('ru')
-    basePrice.innerText = formatter.format(basePriceElement)
+    basePrice.innerText = `${formatter.format(basePriceElement)} ₽` 
 
     let totalPriceElement = basePriceElement + parseInt(otherInput.value) 
     const formatterTotal = new Intl. NumberFormat('ru')
-    totalPrice.innerText = formatterTotal.format(totalPriceElement)
+    totalPrice.innerText = `${formatterTotal.format(totalPriceElement)} ₽`
    
    
 }
