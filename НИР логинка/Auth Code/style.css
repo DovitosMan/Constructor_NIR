@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Medium.ttf) 
+}
+body{
+    background: #2E2A51;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    margin-bottom: 222px;
+    padding: 50px 80px 0px 80px ; 
+}
+
+.container{
+    display: grid;  
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.Auto{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+
+}
+.container2{
+    display: flex;
+    gap: 25px;
+    
+}
+.oneNumber{
+    width: 73px;
+    min-height: 80px;
+    font-size: 50px;
+    background: #2E2A51;
+    border-radius: 4px;
+    border-color:#ABABAB;
+    border: 1px solid var(--neutral-grey,rgba(77, 77, 77, 1));
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+.Entry{ 
+    cursor: pointer;
+    background: rgba(63, 62, 94, 1);
+    padding: 20px;
+    border-radius: 7px;
+    font-size: 24px;
+    color:rgba(255, 255, 255, 1);
+    font-family: "Montserrat";
+    border: none;
+    font-weight: 700;
+}
+
+button:hover{
+    background: #52507a;
+}
+
+button:active{
+    opacity: 0.3;
+}
+
+.bottom{
+    display: flex;
+    justify-content: end;
+    color: #ABABAB;
+}
+
+.support{
+    color: white;
+}
