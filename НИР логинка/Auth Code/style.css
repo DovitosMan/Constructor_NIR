@@ -22,6 +22,8 @@ body{
     gap: 56px;
     margin-top: 200px;
     margin-bottom: 200px;
+    height: 100%; /*changed*/
+    width: 100%; /*changed*/
 }
 .Auto{
     color: white;
@@ -34,11 +36,15 @@ body{
 .container2{
     display: flex;
     gap: 25px;
-    
 }
+ 
+.container2 input:focus{  /*changed*/
+    outline: 1px solid #fff ;
+}
+
 .oneNumber{
-    width: 73px;
-    min-height: 80px;
+    max-width: 73px; /*changed*/
+    max-height: 80px; /*changed*/
     font-size: 50px;
     background: #2E2A51;
     border-radius: 4px;
@@ -47,6 +53,8 @@ body{
     color: white;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+    height: 100%; /*changed*/
+    width: 100%;  /*changed*/
 }
 .Entry{ 
     cursor: pointer;
@@ -76,4 +84,28 @@ button:active{
 
 .support{
     color: white;
+}
+
+@media (max-width: 800px) { /*changed*/
+    body{
+        padding: 30px;
+        margin: 0;
+    }
+    .Auto{
+        font-size: 20px;
+    }
+    .container{
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    .container2{
+        gap: 5px;
+    }
+    .oneNumber{
+        font-size: 40px;
+        height: 60px;
+    }
+    .bottom{
+        justify-content: center;
+    } 
 }
