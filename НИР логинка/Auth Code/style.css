@@ -30,7 +30,7 @@ body{
     font-size: 35px;
     font-weight: 700;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 
 }
 .container2{
@@ -92,10 +92,10 @@ button:active{
         margin: 0;
     }
     .Auto{
-        font-size: 20px;
+        font-size: 25px;
     }
     .container{
-        margin-top: 200px;
+        margin-top: 135px;
         margin-bottom: 50px;
     }
     .container2{
@@ -106,6 +106,7 @@ button:active{
         height: 60px;
     }
     .bottom{
+        margin-top: 80px;
         justify-content: center;
     } 
 }

@@ -20,8 +20,10 @@ body{
     align-items: center;
     justify-content: center;
     gap: 56px;
-    margin-top: 200px;
+
     margin-bottom: 200px;
+    height: 100%; /*changed*/
+    width: 100%; /*changed*/
     
 }
 .createPass{
@@ -34,7 +36,13 @@ body{
 }
 .container2{
     display: grid;
-    gap: 30px;
+    gap: 40px;
+    height: 100%; /*changed*/
+    width: 100%; /*changed*/
+    
+}
+.container2 input:focus{  /*changed*/
+    outline: 1px solid #fff ;
 }
 .password{
     border-radius: 4px;
@@ -87,4 +95,38 @@ button:active{
 }
 .support{
     color: white;
+}
+@media (max-width: 800px) {
+    .createPass{
+        color: white;
+        font-size:27px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+    }
+    body{
+        margin: 0;
+        padding: 30px; 
+    }
+    .container2{
+        display: grid;
+        gap: 50px;
+    }
+    .password{
+        min-width: 348px;
+    }
+    .confirmPass{
+        min-width: 348px;
+    }
+    .container{
+        display: grid;  
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+        margin-top: 120px;
+    }
+    .bottom{
+        justify-content: center;
+    }
+
 }
