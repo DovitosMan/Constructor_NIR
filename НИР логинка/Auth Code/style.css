@@ -85,8 +85,6 @@ button:active{
 .support{
     color: white;
 }
-<<<<<<< HEAD
-=======
 
 @media (max-width: 800px) { /*changed*/
     body{
@@ -111,4 +109,3 @@ button:active{
         justify-content: center;
     } 
 }
->>>>>>> c7056cd4a050c8b3865210ad19a3a489f95befc3
