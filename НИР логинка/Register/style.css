@@ -43,7 +43,7 @@ body{
     border-radius: 4px;
     border-color:#ABABAB;
     min-height: 60px;
-    min-width: 548px;
+    max-width: 100%;
     font-size: 22px;
     padding-left: 20px;
     background: #2E2A51;
@@ -57,7 +57,7 @@ body{
     border-radius: 4px;
     border-color:#ABABAB;
     min-height: 60px;
-    min-width: 548px;
+    max-width: 100%;
     font-size: 22px;
     padding-left: 20px;
     background: #2E2A51;
@@ -67,7 +67,7 @@ body{
 .password{
     border-radius: 4px;
     min-height: 60px;
-    min-width: 548px;
+    max-width: 100%;
     background: #2E2A51;
     border-color:#ABABAB;
     padding-left: 20px;
@@ -82,7 +82,7 @@ body{
     border-radius: 4px;
     border-color:#ABABAB;
     min-height: 60px;
-    min-width: 548px;
+    max-width: 100%;
     font-size: 22px;
     padding-left: 20px;
     background: #2E2A51;
@@ -148,27 +148,22 @@ button{
         display: grid;  
         align-items: center;
         justify-content: center;
-        gap: 56px;
-        margin-top: 200px;
-        margin-bottom: 200px;
+        gap: 40px;
+        margin-top: 50px;
+        margin-bottom: 0;
     }
     .container2{
         display: grid;
         gap: 30px;
     }
-    .container2 input{
-        max-width: 150px;
-    }
     .login{
         max-width: 548px;
     }
-    
     .mail{
         max-width: 548px;
     }
     .password{
         max-width: 548px;
-    
     }
     .confirmPass{
         max-width: 548px;
@@ -182,7 +177,7 @@ button{
         min-width: 75px;
         padding: 10px;
     }
-    .register{ 
-       justify-self: center;
+    .bottom{
+        margin-top: 30px;
     }
 }
