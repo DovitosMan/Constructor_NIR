@@ -139,3 +139,92 @@ button{
     color: white;
     text-align: end;
 }
+@media (max-width: 800px) {
+    body{
+        margin: 0;
+        padding: 30px;
+    }
+    .autho{
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        justify-content: left;
+    }
+    .container{
+        display: grid;  
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .container2{
+        display: grid;
+        gap: 30px;
+        max-width: 320px;
+        padding-left: 0px;
+    }
+    .mail{
+        min-height: 60px;
+        min-width: 300px;
+    }
+    .password{
+        min-height: 60px;
+        min-width: 300px;
+    }
+    .container3{
+        display: flex;
+        align-items: center;
+        color: grey;
+        font-weight: 400;
+        font-size: 18px;
+        justify-content: space-between;
+        gap: 50px;
+        max-width: 320px;
+    }
+    .container4{
+        display: flex;
+        align-items: center;
+        max-width: 175px;
+    }
+    .remember{
+        margin-left: 10px;
+        color: #ABABAB;
+        width: 150px;
+        font-size: 15px;
+    }
+    .forgot{
+        color: white;
+        font-size: 15px;
+        max-width: 200px;
+        max-height: 30px;
+    }
+    .Entry{ 
+        cursor: pointer;
+        background: rgba(63, 62, 94, 1);
+        padding: 20px;
+        font-size: 20px;
+        min-height: 60px;
+        min-width: 300px;
+    }
+    button{
+        min-width: 100px;
+        padding: 10px;
+    }
+    .socialButtons{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .bottom{
+        display: grid;
+        place-items: center;
+        padding-top: 50px ;
+    }
+    .support{
+        display: grid;
+        place-items: center;
+        padding-top: 50px ;
+    }
+}
