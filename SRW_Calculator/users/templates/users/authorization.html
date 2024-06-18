@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор НИР</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'users/css/authorization.css' %}">
+</head>
+<body>
+<div class="logo"><img src="../../static/users/media/image/Logo.png" alt=""></div>
+<div class="container">
+    <div class="autho">
+        Авторизация
+    </div>
+    <form method="post" class="container2">
+        {% csrf_token %}
+        {{ form.username }}
+        {{ form.password }}
+{#        <input type="hidden" name="next" value="{{ next }}" />#}
+{#        <div class="mail">{{ form.non_field_errors }}</div>#}
+        <div class="container3">
+            <div class="container4">
+                <input class="checkbox" type="checkbox">
+                <div class="remember">Запомнить меня</div>
+            </div>
+            <a class="forgot" href="">Забыли пароль?</a>
+        </div>
+        <button class="Entry" type="submit">
+            Войти
+        </button>
+    </form>
+    <div class="or">или</div>
+    <div class="socialButtons">
+        <button><img src="../../static/users/media/image/Social icon google.png" alt=""></button>
+        <button><img src="../../static/users/media/image/Social icon facebook.png" alt=""></button>
+        <button><img src="../../static/users/media/image/Social icon apple.png" alt=""></button>
+    </div>
+
+</div>
+<div class="bottom">
+    <div class="noAcc"> Нет аккаунта? <a class="logIn" href="{% url "users:register" %}">Зарегистрироваться</a></div>
+    <a class="support" href="">Обратиться в поддержку</a>
+
+</div>
+</body>
+</html>
