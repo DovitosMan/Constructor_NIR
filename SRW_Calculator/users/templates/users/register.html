@@ -14,16 +14,16 @@
         Регистрация
     </div>
 
-        <div class="container2">
-            <input class="login" placeholder="Логин" type="text">
-            <input class="mail" placeholder="Почта" type="text">
-            <input class="password" placeholder="Пароль" type="password">
-            <input class="confirmPass" placeholder="Подтвердите пароль" type="password">
-
-        </div>
-        <button class="register">
-            Зарегистрироваться
-        </button>
+{#        <div class="container2">#}
+{#            <input class="login" placeholder="Логин" type="text">#}
+{#            <input class="mail" placeholder="Почта" type="text">#}
+{#            <input class="password" placeholder="Пароль" type="password">#}
+{#            <input class="confirmPass" placeholder="Подтвердите пароль" type="password">#}
+{##}
+{#        </div>#}
+{#        <button class="register">#}
+{#            Зарегистрироваться#}
+{#        </button>#}
     <form method="post" class="container2">
         {% csrf_token %}
         {{ form.username }}
