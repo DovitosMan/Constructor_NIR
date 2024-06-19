@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Constructor-NIR.iml" filepath="$PROJECT_DIR$/.idea/Constructor-NIR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Constructor_NIR/.idea/Constructor-NIR.iml" filepath="$PROJECT_DIR$/../Constructor_NIR/.idea/Constructor-NIR.iml" />
     </modules>
   </component>
 </project>

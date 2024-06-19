@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Constructor-NIR.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Constructor_NIR.settings")
 
 application = get_wsgi_application()

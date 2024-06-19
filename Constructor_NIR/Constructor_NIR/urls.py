@@ -18,7 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from SRW_Calculator import settings
+from Constructor_NIR import settings
 from main_calc import views
 
 urlpatterns = [
