@@ -416,3 +416,22 @@ button:hover{
     gap: 40px;
 }
 
+@media (max-width: 800px){
+    .head__center{
+        margin-left: 0;
+    }
+    .window__head-second{
+        width: 100%;
+    }
+    .cost__plate{
+        width: 85%;
+    }
+    .window__coef-parametrs{
+        display: grid;
+        gap: 1rem;
+    }
+    .window__entry-data{
+        display: grid;
+        gap: 1rem;
+    }
+}
